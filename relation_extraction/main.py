@@ -6,7 +6,7 @@ from torch.utils.data import DataLoader
 
 from data_utils import SentenceREDataset, get_idx2tag
 from model import SentenceRE
-
+# 训练
 
 def train():
 
@@ -14,7 +14,7 @@ def train():
     max_len = 256
 
     train_batch_size = 32
-    device = torch.device("cuda:0")
+    device = torch.device("cuda:1")
 
     learning_rate = 3e-5
 
